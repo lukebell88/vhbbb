@@ -1,0 +1,26 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/audioplayer";
+@import "components/card";
+@import "components/hero";
+@import "components/social";
+
+@import "layout/global";
+@import "layout/header";
+
+@import "pages/about";
+@import "pages/episode";
+@import "pages/episodes";
+@import "pages/home";
+@import "pages/details";
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
+
+

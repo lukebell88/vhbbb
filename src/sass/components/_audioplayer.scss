@@ -1,0 +1,36 @@
+
+
+.rhap_container {
+    background-color: $white !important;
+    outline: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    box-shadow: none !important;
+
+}
+
+.rhap_main-controls-button {
+    color: $gray-300!important;
+}
+
+.rhap_button-clear:hover {
+    color: $primary !important; 
+}
+.rhap_button-clear:focus {
+    color: $primary !important; 
+    outline: none !important;
+}
+.rhap_button-clear:focus-within {
+    color: $primary !important; 
+}
+.rhap_volume-button {
+    color: $gray-300 !important;
+}
+
+.rhap_progress-indicator {
+    background: $primary !important;
+}
+.rhap_time {
+    color: $gray-300 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}

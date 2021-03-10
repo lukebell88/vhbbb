@@ -1,0 +1,130 @@
+
+.ep--container {
+  width: 1440px;
+}
+
+.ep--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: $lrg;
+  row-gap: $lrg;
+}
+
+
+
+.episodes {
+  &--container {
+    width: calc(1140px - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+
+    & h1 {
+      text-align: center;
+    }
+  }
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: $lrg;
+      row-gap: $lrg; 
+
+      &.recent {
+        grid-template-rows: auto;
+      }
+
+    a {
+        border-radius: $sml;
+        background-color: $white;
+        -webkit-box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.1);
+        -moz-box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.1);
+        box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.1);
+        text-decoration: none;
+        color: $secondary;
+
+        &:hover {
+            -webkit-box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.18);
+            -moz-box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.18);
+            box-shadow: 1px 16px 15px -6px rgba(0,0,0,0.18);
+            color: $black;
+
+        }
+    }
+  }
+
+  &--image {
+    border-top-left-radius: $sml;
+    border-top-right-radius: $sml;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  &--titles {
+      padding-left: $sml;
+      padding-right: $sml;
+      padding-top: $xsml;
+      padding-bottom: $xsml;
+      position: relative;
+      height: 114px;
+
+      h3 {
+        font-size: 1.05rem;
+      }
+      h4 {
+        font-size: 0.8rem;
+        margin-bottom: $sml;
+        color: $gray-300;
+        position: absolute;
+        bottom: $sml;
+      }
+  }
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+  .episodes {
+    &--container {
+      width: calc(100% - 64px);
+    }
+    &--grid {
+      column-gap: $sml;
+      row-gap: $sml;
+    }
+  }
+}   
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+  .episodes {
+    &--grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: $med;
+      row-gap: $med;
+    }
+  }
+ }
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  .episodes {
+    &--container {
+      width: calc(100% - 32px);
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    &--grid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      column-gap: $lrg;
+      row-gap: $lrg;
+    }
+ }
+ }

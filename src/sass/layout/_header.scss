@@ -1,0 +1,153 @@
+
+    .header {
+        background-color: white;
+        height: 130px;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+     }
+     .logo--container {
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+     }
+     img.logo--container {
+         margin-bottom: 0;
+         width: 150px;
+     }
+ 
+     /* Position and sizing of burger button */
+     .bm-burger-button {
+         position: fixed;
+         width: 36px;
+         height: 30px;
+         left: 36px;
+         top: 48px;
+     }
+   
+     /* Color/shape of burger icon bars */
+     .bm-burger-bars {
+         background: $secondary;
+         height: 12% !important;
+     }
+   
+     /* Color/shape of burger icon bars on hover*/
+     .bm-burger-bars-hover {
+         background: $secondary;
+     }
+   
+     /* Position and sizing of clickable cross button */
+     .bm-cross-button {
+         height: 24px;
+         width: 24px;
+     }  
+     /* Color/shape of close button cross */
+     .bm-cross {
+         background: $secondary;
+     }
+   
+     /*
+     Sidebar wrapper styles
+     Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+     */
+     .bm-menu-wrap {
+         position: fixed;
+         height: 100%;
+     }
+ 
+     /* General sidebar styles */
+     .bm-menu {
+         background: $white;
+         padding: 2.5em 1.5em 0;
+         font-size: 1.15em;
+     }
+ 
+     /* Morph shape necessary with bubble or elastic */
+     .bm-morph-shape {
+         fill: $white;
+     }
+ 
+     /* Wrapper for item list */
+     .bm-item-list {
+         padding: 0.8em;
+     }
+ 
+     /* Individual item */
+     .bm-item {
+         display: inline-block;
+     }
+     nav.bm-item-list {
+         height: auto !important;
+     }
+
+ 
+     /* Styling of overlay */
+     .bm-overlay {
+         background: rgba(0, 0, 0, 0.3);
+     }
+     a.bm-item.menu-item {
+         font-size: 1.6rem;
+         text-decoration: none;
+         color: $secondary;
+         font-family: sans-serif;
+         font-weight: 700;
+         margin-bottom: $lrg;
+         outline: none;
+     }
+     button#react-burger-menu-btn {
+         display: block;
+     }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    .header {
+        height: 110px;
+     }
+    img.logo--container {
+        width: 120px;
+    }
+    .bm-burger-button {
+        width: 30px;
+        height: 25px;
+        top: 44px;
+        left: 32px;
+    }
+}   
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .header {
+        height: 90px;
+     }
+    img.logo--container {
+        width: 100px;
+    }
+    .bm-burger-button {
+        top: 36px;
+    }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+ }
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .header {
+        height: 80px;
+     }
+    img.logo--container {
+        width: 90px;
+        padding-top: 3px;
+    }
+    .bm-burger-button {
+        width: 30px;
+        height: 25px;
+        top: 30px;
+        left: 24px;
+    }
+ }
+
+
