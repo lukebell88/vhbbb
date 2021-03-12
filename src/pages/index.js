@@ -21,6 +21,7 @@ const IndexPage = ({ data }) => {
             <img
               className="episodes--image"
               src={podcast.node.item.itunes.image}
+              alt={podcast.node.item.title}
             />
             <div className="episodes--titles">
               <h3 key={podcast.node.id}>{podcast.node.item.title}</h3>

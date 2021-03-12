@@ -1,18 +1,4 @@
 
-.ep--container {
-  width: 1440px;
-}
-
-.ep--grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  column-gap: $lrg;
-  row-gap: $lrg;
-}
-
-
-
 .episodes {
   &--container {
     width: calc(1140px - 64px);

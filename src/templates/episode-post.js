@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Header from "../components/header"
 
@@ -16,7 +15,7 @@ const ExpisodePost = ({ data }) => {
       <Header />
       <div className="episode--wrapper">
       <div className="episode--cover">
-        <img className="episode--image" src={ep.item.itunes.image} />
+        <img className="episode--image" src={ep.item.itunes.image} alt={ep.item.title} />
         <div className="">
           <AudioPlayer
             src={ep.item.enclosure.url}
