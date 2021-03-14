@@ -13,7 +13,7 @@ const ContactPage = () => {
       <div className="wrapper">
       <div className="contact--container">
       <h1>Contact</h1>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" action="/thanks" data-netlify="true" id="contact-form">
             <p>
                 <label>Name: <input type="text" name="name" /></label>   
             </p>
@@ -35,4 +35,3 @@ const ContactPage = () => {
 }
 
 export default ContactPage
-
