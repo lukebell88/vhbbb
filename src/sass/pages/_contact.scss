@@ -1,0 +1,99 @@
+
+.contact {
+    &--container {
+        width: calc(1140px - 64px);
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 32px;
+
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            height: 44px;
+            margin-top: 4px;
+            padding-left: 16px;
+            border: 1px solid $gray-300;
+        }
+        input[type="email"] {
+            height: 44px;
+            margin-top: 4px;
+            padding-left: 16px;
+            border: 1px solid $gray-300;
+        }
+        textarea {
+            height: 144px;
+            margin-top: 4px;
+            padding: 16px;
+            border: 1px solid $gray-300;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        button {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            height: 44px;
+            background-color: $primary;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }   
+}
+
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    .contact {
+        &--container {
+            width: calc(100% - 64px);
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-top: 32px;
+    
+            h1 {
+                text-align: center;
+            }
+            form {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}   
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+ }
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+ }

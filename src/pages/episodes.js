@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 import "../sass/main.scss"
 
@@ -34,7 +35,7 @@ const EpisodesPage = ({ data }) => {
     </div>
     </div>
     </div>
-      
+      <Footer />
     </main>
   )
 }

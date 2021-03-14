@@ -1,30 +1,20 @@
 
-.social {
+.listen {
     border-top: 1px solid $gray-200;
     margin-top: 54px;
     padding-top: 16px;
-    background-color: $white;
+    margin-bottom: 64px;
     h2 {
         text-align: center;
     }
-    p {
-        text-align: center;
-        font-size: 0.8rem;
-        margin-bottom: 0px;
-        margin-top: 16px;
-        padding-bottom: 44px;
-    }
     &--gird {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         column-gap: 16px;
         width: -moz-fit-content;
         width: fit-content;  
         margin-left: auto;
         margin-right: auto; 
-    }
-    &--icon {
-        width: 54px;
     }   
 }
 
@@ -42,7 +32,7 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
-    .social {
+    .listen {
         &--icon {
             width: 44px;
         }
@@ -51,7 +41,7 @@
 
 // Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-    .social {
+    .listen {
         &--icon {
             width: 36px;
         }

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Header from "../components/header"
-
+import Footer from "../components/footer"
 import "../sass/main.scss"
 
 import AudioPlayer from "react-h5-audio-player"
@@ -34,7 +34,7 @@ const ExpisodePost = ({ data }) => {
           />
         </div>
     </div>
-
+    <Footer />
     </main>
   )
 }

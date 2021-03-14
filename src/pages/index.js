@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Header from "../components/header"
 import Followus from "../components/followus"
+import Footer from "../components/footer"
 import "../sass/main.scss"
 
 
@@ -34,8 +35,9 @@ const IndexPage = ({ data }) => {
       </div>
     </div>
       <Followus />
+
     </div>
-      
+    <Footer />
     </main>
   )
 }
