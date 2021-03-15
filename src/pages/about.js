@@ -13,7 +13,7 @@ const AboutPage = () => {
       <div className="wrapper">
       <div className="episodes--container">
       <h1>About</h1>
-
+        
       </div>
     </div>
     <Footer />
