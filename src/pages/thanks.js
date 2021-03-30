@@ -11,7 +11,7 @@ function encode(data) {
     .join('&')
 }
 
-export default function ContactPage() {
+export default function ThanksPage() {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
@@ -40,6 +40,7 @@ export default function ContactPage() {
       <div className="wrapper">
       <div className="contact--container">
       <h1>Contact</h1>
+
       <form
         name="contact"
         method="post"
@@ -48,6 +49,7 @@ export default function ContactPage() {
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
+                <p>Thank you for your email!</p>
             <p>
                 <label>Name: <input type="text" name="name" onChange={handleChange} /></label>   
             </p>
